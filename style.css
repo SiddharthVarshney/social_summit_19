@@ -61,7 +61,7 @@ body {
   left: 0;
   z-index: 99;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px;
 }
 
 .header-bar .site-branding {
@@ -218,10 +218,6 @@ body {
     padding: 0;
   }
 
-  .site-navigation ul li:nth-last-of-type(1) {
-    padding-left: 60px;
-  }
-
   .site-navigation ul li a {
     color: #fff;
   }
@@ -231,41 +227,65 @@ body {
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-  padding: 220px 0;
-  background: url("images/cover.jpg") no-repeat;
+  padding: 120px 0;
+  background: url("new images/cover-2.jpg") no-repeat;
   background-size: cover;
 }
 
-.hero-content .entry-header {
+.hero-content .custom-button {
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-content .typewriter {
   position: relative;
   text-align: center;
 }
 
-.hero-content .entry-header h2 {
-  padding: 50px;
-  margin-bottom: 20px;
-  font-family: mountains;
-  font-size: 100px;
-}
-
-.hero-content .entry-header .entry-meta-date {
-  position: absolute;
-  width: 100%;
-  top: 20px;
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  color: hsl(0, 0%, 90%);
-  text-align: center;
-}
-
 @media screen and (min-width: 992px) {
-  .hero-content .entry-header h2 {
-    font-size: 120px;
+  .hero-content .typewriter- h2 {
+    font-size: 80px;
+    text-align: center;
+    margin: 50px;
   }
 
-  .hero-content .entry-header .entry-meta-date {
+  .hero-content .typewriter .entry-meta-date {
     top: 60px;
+  }
+}
+
+.typewriter h2 {
+  height: 160px;
+  padding: auto;
+  font-family: mountains;
+  margin: 0 auto;
+  font-size: 80px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
   }
 }
 
