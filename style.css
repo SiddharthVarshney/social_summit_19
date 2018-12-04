@@ -35,7 +35,7 @@ body {
 # site-header
 ------------------------------------------------------------*/
 .home-page {
-  background: url(images/middle-cover.jpg) no-repeat;
+  background: url(images/blog-page-background.jpg) repeat;
 }
 
 .site-header {
