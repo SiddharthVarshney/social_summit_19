@@ -34,14 +34,6 @@ body {
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
-.home-page {
-  background: url(images/middle-cover-2.jpeg) repeat;
-}
-
-/* .header-bar {
-  background-color: #226663;
-  opacity: 0.7;
-} */
 
 .site-header {
   position: relative;
@@ -237,13 +229,20 @@ body {
     color: #fff;
   }
 }
-
+/*------------------------------------------------------------
+# brochure
+-----------------------------------------------------------*/
+.brochure {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
 /*------------------------------------------------------------
 # hero
 -----------------------------------------------------------*/
 .hero-content {
   padding: 160px 0;
-  background: url("images/cover2.jpg") no-repeat;
+  background: url("images/cover2.png") no-repeat;
   background-size: cover;
 }
 
@@ -312,8 +311,8 @@ body {
 .content-section {
   width: 100%;
   padding-bottom: 120px;
-  background: url("images/middle-cover-2.jpeg") no-repeat;
-  background-size: 100% auto;
+  background: url("images/bg-images/middle-cover.png") no-repeat;
+  background-size: auto;
 }
 
 .content-section .middle-cover {
