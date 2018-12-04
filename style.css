@@ -235,7 +235,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
   padding: 160px 0;
-  background: url("images/cover.png") no-repeat;
+  background: url("images/cover2.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -272,7 +272,8 @@ body {
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 1s;
 }
 
 /* The typing effect */
