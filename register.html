@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML5</title>
+    <style>
+      legend {
+        font-size: larger;
+        font-weight: bold;
+        font-style: oblique;
+        font-variant: small-caps;
+      }
+      fieldset {
+        border: 3px dashed blue;
+        padding: 20px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: larger;
+        font-style: normal;
+        font-variant: small;
+        color: #000000;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div align="center" style="width:100%;padding:30px">
+      <div style="width:700px;background-color:lightgray;padding:20px; ">
+        <!--
+          text, password, datetime, datetime- local, date, month, time, week, number, email, url, search, tel, and color.
+        -->
+
+        <form name="formData" id="formData" action="process.html" method="post">
+          <fieldset>
+            <legend>&nbsp;&nbsp; Basic Inputs &nbsp;&nbsp;</legend>
+            <p>
+              <label for="name">Your Full Name : </label>&nbsp;&nbsp;&nbsp;
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value=""
+                minlength="7"
+                maxlength="20"
+                placeholder="Enter Your Name"
+                required
+              />
+            </p>
+            <p>
+              <label for="number">Your Phone No : </label
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+              <input
+                type="tel"
+                id="number"
+                name="number"
+                placeholder="Your Contact Number"
+                minlength="10"
+                maxlength="15"
+                required
+              />
+            </p>
+            <p>
+              <label for="emailId">Your Email Id : </label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input
+                type="email"
+                id="emailId"
+                name="emailId"
+                value=""
+                placeholder="Enter Your Email Id"
+                required
+              />
+            </p>
+            <p>
+              <label for="dob">Date &nbsp;Of&nbsp; Birth : </label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="date" id="dob" name="dob" value="" required />
+            </p>
+            <p>
+              <label for="gender">Gender : </label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" id="gender" name="gender" value="m" checked />
+              Male
+              <input type="radio" id="gender" name="gender" value="f" /> Female
+            </p>
+            <p>
+              <label for="branch">Branch Name And Year : </label>&nbsp;
+              <input
+                type="text"
+                id="branch"
+                name="branch"
+                value=""
+                placeholder="Your Branch Name"
+                required
+              />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select name="year"
+                ><option>-- Select --</option
+                ><option>1st year</option
+                ><option>2nd year</option
+                ><option>3rd year</option>
+                <option>4th year</option
+                ><option>5th year</option></select
+              >
+            </p>
+            <p>
+              <label for="collage">Present Collage Name : </label
+              >&nbsp;&nbsp;&nbsp;&nbsp;
+              <input
+                type="text"
+                id="collage"
+                name="collage"
+                value=""
+                placeholder="Collage Name"
+              />
+            </p>
+            <p>
+              <label for="collageState">Collage State Name : </label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input
+                type="text"
+                id="collageState"
+                name="collageState"
+                value=""
+                placeholder="Collage State"
+              />
+            </p>
+            <p>
+              <label for="event">Primary Event Name : </label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <select id="event" name="event"
+                ><option>Intern</option
+                ><option>Ph.D</option
+                ><option>M.tech</option
+                ><option>B.tech</option>
+                <option selected>B.Sc</option
+                ><option>M.Sc</option
+                ><option>BCA</option
+                ><option>BBA</option
+                ><option>MCA</option>
+                <option>B.Com</option
+                ><option>M.Com</option
+                ><option>ITI</option
+                ><option>IMSc</option
+                ><option>STC</option
+                ><option>B.Ad</option>
+                <option>MBBS</option></select
+              >
+            </p>
+            <p>
+              <label for="UserPwd">Your password : </label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input
+                type="password"
+                id="UserPwd"
+                name="UserPwd"
+                value=""
+                minlength="7"
+                maxlength="15"
+                placeholder="Enter Your password"
+                required
+              />
+            </p>
+            <p>
+              <label for="RePwd">Re-enter password : </label>&nbsp;&nbsp;
+              <input
+                type="password"
+                id="RePwd"
+                name="RePwd"
+                value=""
+                minlength="7"
+                maxlength="15"
+                placeholder="Enter Your password"
+                required
+              />
+            </p>
+          </fieldset>
+
+          <br /><br /><br />
+
+          <fieldset>
+            <legend>&nbsp;&nbsp; Submit / Reset Form &nbsp;&nbsp;</legend>
+            <p>
+              <input type="submit" value="SUBMIT" />&nbsp;&nbsp;&nbsp;
+              <input type="reset" value="RESET" /><br />
+            </p>
+          </fieldset>
+        </form>
+        <br />
+        <footer
+          style="border:3px solid black;padding:5px;width:684px;height:50px;"
+        >
+          <p align="center">&copy;Copyright</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

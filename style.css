@@ -35,8 +35,13 @@ body {
 # site-header
 ------------------------------------------------------------*/
 .home-page {
-  background: url(images/blog-page-background.jpg) repeat;
+  background: url(images/middle-cover-2.jpeg) repeat;
 }
+
+/* .header-bar {
+  background-color: #226663;
+  opacity: 0.7;
+} */
 
 .site-header {
   position: relative;
@@ -66,13 +71,15 @@ body {
 
 .header-bar .site-branding {
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 800;
 }
 
 .header-bar .site-branding a {
-  color: hsl(0, 0%, 100%);
+  color: #fff;
   text-decoration: none;
+  font-weight: bold;
+  font-family: "Calibri";
 }
 
 /* If the screen size is 992px wide or more, set the font-size of <div> to 80px */
@@ -80,7 +87,7 @@ body {
 /* If the screen size is 991px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 992px) {
   a.summit-branding {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 /*------------------------------------------------------------
@@ -104,7 +111,7 @@ body {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #fff;
+  background: #efc319;
   border-radius: 10px;
   opacity: 1;
   left: 0;
@@ -154,7 +161,7 @@ body {
   overflow: hidden;
   list-style: none;
   transition: all 0.35s;
-  color: hsl(0, 0%, 100%);
+  color: #fff;
 }
 
 .site-navigation.show {
@@ -186,9 +193,10 @@ body {
 .site-navigation ul li a {
   display: block;
   color: #fff;
+  font-weight: bold;
   transition: all 0.35s;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 40px;
 }
 
@@ -266,10 +274,11 @@ body {
   height: 160px;
   padding: auto;
   font-family: mountains;
+  color: #59f1e7;
   margin: 0 auto;
   font-size: 80px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid #efc319; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
@@ -301,10 +310,9 @@ body {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-  min-height: 4640px;
   width: 100%;
   padding-bottom: 120px;
-  background: url("images/middle-cover.jpg") no-repeat;
+  background: url("images/middle-cover-2.jpeg") no-repeat;
   background-size: 100% auto;
 }
 
@@ -339,6 +347,8 @@ body {
   font-size: 48px;
   font-weight: 600;
   color: hsl(0, 0%, 0%);
+  font-family: "Calibri";
+  font-weight: bold;
 }
 
 /*------------------------------------------------------------
@@ -845,6 +855,7 @@ body {
 .footer-content-wrapper .entry-title a {
   font-size: 52px;
   font-weight: 700;
+  font-family: "Calibri";
   color: hsl(0, 0%, 100%);
   line-height: 1;
   text-decoration: none;
@@ -901,8 +912,6 @@ body {
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
-.about-us .site-header {
-}
 
 .about-us .site-header figure {
   margin: 0;
