@@ -230,26 +230,62 @@ body {
   }
 }
 /*------------------------------------------------------------
-# brochure
+# brochure_container
 -----------------------------------------------------------*/
-.brochure {
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 100px;
+.brochure_container {
+  margin: 100px;
+  width: max-content;
+}
+
+.box {
+  width: 600px;
+  height: 500px;
+  background: #3b3b3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+.box .btn {
+  display: inline-block;
+  padding: 8px 24px;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+.box .btn-primary {
+  border-color: #17a2b8;
+  color: #17a2b8;
+  margin: 10px;
+}
+.box .btn-primary:hover {
+  background: #17a2b8;
+  color: #fff;
 }
 /*------------------------------------------------------------
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-  padding: 160px 0;
-  background: url("images/cover2.png") no-repeat;
+  padding: 120px 0;
+  background: url("images/cover-images/home-cover.png") no-repeat;
   background-size: cover;
 }
 
 .hero-content .custom-button {
   position: relative;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .hero-content .typewriter {
@@ -931,7 +967,7 @@ body {
 }
 
 .about-us .page-header {
-  background: url("images/about-us-header-background.jpg") no-repeat;
+  background: url("images/cover-images/about-us.png") no-repeat;
   background-size: cover;
 }
 
@@ -1191,7 +1227,7 @@ body {
 # Page Header
 ------------------------------------------------------------ */
 .tickets-page .page-header {
-  background: url("images/tickets-page-header-background.jpg") no-repeat;
+  background: url("images/cover-images/events.png") no-repeat;
 }
 .tickets-page .tabs {
   margin-top: 80px;
@@ -1394,7 +1430,7 @@ body {
 # site-header
 ------------------------------------------------------------ */
 .blog-page .page-header {
-  background: url("images/blog-header-background.jpg") no-repeat;
+  background: url("images/cover-images/partners.png") no-repeat;
 }
 .blog-list-page .single-blog-content {
   display: none;
@@ -1588,7 +1624,8 @@ body {
   background: url("images/elements-total-background.png") no-repeat;
 }
 .elements-page .page-header {
-  background: url("images/elements-header-background.jpg") no-repeat;
+  background: url("images/cover-images/home-cover.png") no-repeat;
+  background-size: cover;
 }
 .elements-page .elements-wrap {
   margin-bottom: 110px;
