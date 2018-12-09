@@ -5,7 +5,7 @@
 }
 
 .container {
-  padding: 100px;
+  padding-top: 30px;
 }
 .main-timeline::before,
 .main-timeline::after {
