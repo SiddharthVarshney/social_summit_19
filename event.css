@@ -137,103 +137,62 @@
 }
 
 .main-timeline .timeline:nth-child(5n + 1)::before {
-  border-color: #46b2bc;
+  border-color: #efc319;
 }
 
 .main-timeline .timeline:nth-child(5n + 1)::after {
-  border-color: #65c7d0;
+  border-color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 1) .timeline-icon {
-  color: #65c7d0;
+  color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 1) .timeline-year {
-  color: #65c7d0;
+  color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 1) .title {
-  color: #65c7d0;
+  color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 2)::before {
-  border-color: #ea3c14;
+  border-color: #efc319;
 }
 
 .main-timeline .timeline:nth-child(5n + 2)::after {
-  border-color: #ef5720;
+  border-color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 2) .timeline-icon {
-  color: #ea3c14;
+  color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 2) .timeline-year {
-  color: #ea3c14;
+  color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 2) .title {
-  color: #ea3c14;
+  color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 3)::before {
-  border-color: #8cc63e;
+  border-color: #efc319;
 }
 
 .main-timeline .timeline:nth-child(5n + 3)::after {
-  border-color: #6caf29;
+  border-color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 3) .timeline-icon {
-  color: #8cc63e;
+  color: #226663;
 }
-
 .main-timeline .timeline:nth-child(5n + 3) .timeline-year {
-  color: #8cc63e;
+  color: #226663;
 }
 
 .main-timeline .timeline:nth-child(5n + 3) .title {
-  color: #8cc63e;
-}
-
-.main-timeline .timeline:nth-child(5n + 4)::before {
-  border-color: #f99324;
-}
-
-.main-timeline .timeline:nth-child(5n + 4)::after {
-  border-color: #fbb03b;
-}
-
-.main-timeline .timeline:nth-child(5n + 4) .timeline-icon {
-  color: #f99324;
-}
-
-.main-timeline .timeline:nth-child(5n + 4) .timeline-year {
-  color: #f99324;
-}
-
-.main-timeline .timeline:nth-child(5n + 4) .title {
-  color: #f99324;
-}
-
-.main-timeline .timeline:nth-child(5n + 5)::before {
-  border-color: #0071bd;
-}
-
-.main-timeline .timeline:nth-child(5n + 5)::after {
-  border-color: #0050a3;
-}
-
-.main-timeline .timeline:nth-child(5n + 5) .timeline-icon {
-  color: #0071bd;
-}
-
-.main-timeline .timeline:nth-child(5n + 5) .timeline-year {
-  color: #0071bd;
-}
-
-.main-timeline .timeline:nth-child(5n + 5) .title {
-  color: #0071bd;
+  color: #226663;
 }
 
 @media screen and (max-width: 1200px) {

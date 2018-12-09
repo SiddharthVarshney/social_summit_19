@@ -864,7 +864,7 @@ body {
 .site-footer {
   position: relative;
   padding: 40px 0 30px;
-  background: url(images/footer-cover.jpg) no-repeat;
+  background: url(images/footer-collage.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -1144,6 +1144,9 @@ body {
   background-image: url(/images/iitr.JPG);
   background-size: cover;
   background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
 }
 
 .inner {
@@ -1156,6 +1159,7 @@ body {
   justify-content: center;
   background: #313131;
   transition: width 200ms ease;
+  border-radius: 8px;
 }
 .inner:hover {
   width: 55%;
