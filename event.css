@@ -104,6 +104,7 @@
 .main-timeline .description {
   font-size: 16px;
   margin: 0;
+  color: #000;
 }
 
 .main-timeline .timeline:nth-child(even)::before {
