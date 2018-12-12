@@ -353,7 +353,7 @@ body {
   top: 0;
   left: 0;
   width: 700px;
-  height: 750px;
+  height: 550px;
 }
 
 @media screen and (max-width: 720px) {
@@ -366,8 +366,7 @@ body {
 
   .box {
     position: relative;
-    text-align: center;
-    margin-left: 80px;
+    margin-left: 40px;
     width: auto;
     height: auto;
     background: #fff1b8 url(images/water-mark1-sm.png);
@@ -391,14 +390,14 @@ body {
 
   .brochure_preview {
     position: relative;
-    text-align: center;
+
     margin: 40px;
   }
 
   .brochure_preview iframe {
     top: 0;
     left: 0;
-    width: 400px;
+    width: 300px;
     height: 300px;
   }
 }
@@ -496,13 +495,13 @@ body {
   }
 
   .typewriter h2 {
-    height: 50px;
-    padding-left: 40px;
+    height: 40px;
+    padding-left: 30px;
     font-family: mountains;
     color: #59f1e7;
     margin: 0 auto;
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid #efc319; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
