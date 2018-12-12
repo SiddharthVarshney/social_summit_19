@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>MBook</title>
+		<title>National Social Summit</title>
+                <link rel="icon" href="/images/logo_without_text.png" type="image/gif" sizes="16x16" />
 		<link rel="stylesheet" type="text/css" media="screen" href="nss.css" />
 		<style>
 			#contact legend{	font-size:30px; font-weight:bold;
@@ -14,15 +15,23 @@
 		</style>
 	</head>
 	<body>
-	<img src="event_logo.png" alt="SoloLearn HTML" title="This is SoloLern HTML picture" />
-	
+        
+	<img src="event_logo.png" />
+        
+        
+        <div>
+          <a href="registration2.php">
+          <button type="button" class="btn  btn-lg" style="position:absolute">Register as Delegate</button>
+          </a>
+	</div> 
+        
 		<div id="container" >
 
 <!-- text, password, datetime, datetime- local, date, month, time, week, number, email, url, search, tel, and color.-->
 
-			<form name="contact" id="contact" action="registrationvldn.php"method="post" >
+			<form name="contact" id="contact" action="registrationvldn1.php"method="post" >
 				<fieldset>
-					<legend>NSS Registration</legend>
+					<h3 style="text-align:center">Register as Campus Ambassador</h3>
 					<p>
 						<label for="name">Full Name : </label>
 						<input type="text" id="name" name="name" minlength="7" maxlength="20" placeholder="Enter Your Name" required />
@@ -59,10 +68,6 @@
 					<p>
 					<label for="collegeState">College State : </label>
 					<input type="text" id="collegeState" name="collegeState" placeholder="college State" required />
-					</p>
-					<p>
-					<label for="refcode">Referral Code : </label>
-					<input type="text" id="refcode" name="refcode"  placeholder="Referral Code" required />
 					</p>
 					<p>
 						<label for="pswd">password : </label>

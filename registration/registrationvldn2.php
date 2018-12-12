@@ -13,26 +13,29 @@ $pswd=$_POST['pswd'];
 $rePswd=$_POST['rePswd'];
 
 if($pswd != $rePswd){
-	header('location:http://www.mbook.ga/index.php');
+        header('location:http://www.nationalsocialsummit.org/registration/registration2.php');
 }
 
-$conn=mysqli_connect('fdb24.atspace.me','2892612_mbook','mohit1234','2892612_mbook');
+$conn=mysqli_connect('fdb24.atspace.me','2904622_mbook','mohit1234','2904622_mbook');
 // select database
-$q1="select * from mbook where (number=$number)";
-$q2="select * from mbook where (emailId=$emailId)";
+
+$q1="select * from nss2 where (number=$number)";
 
 $result=mysqli_query($conn,$q1);
 
 $num=mysqli_num_rows($result);
 
 if($num!=0){
-	header('location:http://www.mbook.ga/index.php');
+	// pop up box
+	header('location:http://www.nationalsocialsummit.org/registration/registration2.php');
 }
 
 // create a query
-$q3="insert into mbook(name,number,emailId,dob,gender,year,college,collegeState,pswd,refcode) values('$name','$number','$emailId','$dob','$gender','$year','$college','$collegeState','$pswd','$refcode')";
+$q2="insert into nss2(name,number,emailId,dob,gender,year,college,collegeState,refcode,pswd) values('$name','$number','$emailId','$dob','$gender','$year','$college','$collegeState','$refcode','$pswd')";
 
-mysqli_query($conn,$q3);
+mysqli_query($conn,$q2);
+
+
 mysqli_close($conn);
 session_destroy();
 ?>
@@ -43,8 +46,6 @@ session_destroy();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <h1>Registration complet !</h1>

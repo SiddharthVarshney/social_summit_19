@@ -1,15 +1,17 @@
 <?php
 session_start();
 if(!isset($_SESSION['userId'])){
-    header('location:http://mbook.ga/index.php');
+        header('location:http://www.nationalsocialsummit.org/registration/login2.php');
 }
 
 
 $number=$_SESSION['userId'];
 
-$conn=mysqli_connect('fdb24.atspace.me','2892612_mbook','mohit1234','2892612_mbook');
+$conn=mysqli_connect('fdb24.atspace.me','2904622_mbook','mohit1234','2904622_mbook');
+
 // select database
-$q1="select * from mbook where (number=$number)";
+
+$q1="select * from nss2 where (number=$number)";
 
 $result=mysqli_query($conn,$q1);
 
@@ -40,6 +42,12 @@ mysqli_close($conn);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="icon"
+      href="/images/logo_without_text.png"
+      type="image/gif"
+      sizes="16x16"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
 <style>
@@ -57,7 +65,7 @@ mysqli_close($conn);
 National Social Summit Profile<br/>
 
 
-<table cellspacing="0px" style=" background-color:#7CFCFF;padding:10px;margin-top:9px;width:100%;
+<table cellspacing="0px" style=" background-color:#ffd966;padding:10px;margin-top:9px;width:100%;
 		font-size:20px;border:1px solid black;">
 	<tr><td>Name :</td><td><?php echo $_SESSION['name']; ?></td></tr>
 	<tr><td>Number :</td><td><?php echo $_SESSION['number']; ?></td></tr>
@@ -67,7 +75,7 @@ National Social Summit Profile<br/>
 	<tr><td>Year Of Graduation :</td><td><?php echo $_SESSION['year']; ?></td></tr>
 	<tr><td>College :</td><td><?php echo $_SESSION['college']; ?></td></tr>
 	<tr><td>College State :</td><td><?php echo $_SESSION['collegeState']; ?></td></tr>
-	<tr><td>Referral Code :</td><td><?php echo $_SESSION['refCode']; ?></td></tr>
+	<tr><td>Used Referral Code :</td><td><?php echo $_SESSION['refCode']; ?></td></tr>
 </table></div>
 	<?php session_destroy(); ?>
     <button><a href="logout.php">LOGOUT</a></button>

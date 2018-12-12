@@ -271,14 +271,14 @@ body {
 
 .box {
   width: 600px;
-  height: 500px;
-  background: #fff;
-
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   overflow: hidden;
+  background: #fff1b8 url(images/water-mark1.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .box .btn {
   display: inline-block;
