@@ -42,6 +42,30 @@
         }
     });
 
+    var prev_event_slider = new Swiper('.next-event-slider', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        centeredSlides: true,
+        breakpoints: {
+            // when window width is <= 320px
+            576: {
+                slidesPerView: 1
+            },
+            // when window width is <= 480px
+            768: {
+                slidesPerView: 2
+            },
+            // when window width is <= 640px
+            1200: {
+                slidesPerView: 3
+            }
+        },
+        navigation: {
+            prevEl: '.next-event-slider-wrap .swiper-button-prev'
+        }
+    });
+
     // Testimonial slider
     var testimonialsSlider = new Swiper('.testimonials-slider', {
         slidesPerView: 1,
