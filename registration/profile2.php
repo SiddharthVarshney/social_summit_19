@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['userId'])){
-        header('location:http://www.nationalsocialsummit.org/registration/login2.php');
+        header('location:http://nationalsocialsummit.org/registration/login2.php');
 }
 
 
@@ -9,7 +9,7 @@ $number=$_SESSION['userId'];
 
 $conn=mysqli_connect('fdb24.atspace.me','2904622_mbook','mohit1234','2904622_mbook');
 
-// select database
+// select databasehttps://cp1.atspace.me/beta/#
 
 $q1="select * from nss2 where (number=$number)";
 
@@ -17,6 +17,7 @@ $result=mysqli_query($conn,$q1);
 
 
 $row = mysqli_fetch_assoc($result);
+
         $_SESSION['name']=$row["name"];
 	$_SESSION['number']=$row["number"];
 	$_SESSION['emailId']=$row["emailId"];
@@ -52,11 +53,23 @@ mysqli_close($conn);
 
 <style>
         td{     border:1px solid black; padding:5px;    }
-		body{	padding: 20px; background-image: url("contact-background-image.png");	}
+	body{	padding: 20px; background-image: url("contact-background-image.png");	}
+        
+        .round{
+	padding:5px;
+	font-size:22px;
+	background-color:#f5de78;
+	color:#0e666c;
+        border-radius:30px;    }
+        
+                
 </style>
 </head>
 <body >
-	<img src="event_logo.png" alt="SoloLearn HTML" title="This is SoloLern HTML picture" />
+        <a href="http://nationalsocialsummit.org/index.html">
+        <img alt="NSS Event Logo" src="event_logo.png" title="NSS Event Logo" width="270px" height="120px">
+        </a>
+	<br/><br/>
 	
         <div  align="center" style="background-color:white; padding:20px; margin:auto; width:700px;
 		font-size:30px; border:2px solid black;">
@@ -78,6 +91,13 @@ National Social Summit Profile<br/>
 	<tr><td>Used Referral Code :</td><td><?php echo $_SESSION['refCode']; ?></td></tr>
 </table></div>
 	<?php session_destroy(); ?>
-    <button><a href="logout.php">LOGOUT</a></button>
+        <br/><br/>
+        
+        <div align="center" >
+       <a href="logout.php">
+          <button  class="round" >&nbsp;&nbsp;&nbsp;LOGOUT&nbsp;&nbsp;&nbsp;</button>
+       </a>
+     </div> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+              
 </body>
 </html>

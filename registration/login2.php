@@ -14,27 +14,38 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="main.js"></script>
     <style>
-			legend{	font-size:30px; font-weight:bold;
-				font-style:oblique; font-variant:none;	
+			legend{	font-size:30px; font-weight:bold; font-variant:none;	
 				}
 			fieldset{ border:0px solid white; padding:20px;
 				}
 			body{	padding: 20px; background-image: url("contact-background-image.png");	}
+                        .round{
+	padding:5px;
+        width:100%;
+	font-size:22px;
+	background-color:#f5de78;
+	color:#0e666c;
+	border-radius:0 0 20px 20px;
+}
 		</style>
 </head>
 <body>
-<img src="event_logo.png" alt="SoloLearn HTML" title="This is SoloLern HTML picture" />
 
-<div>
-          <a href="login1.php">
-          <button type="button" class="btn  btn-lg">Login For Campus Ambassador ! Click Here</button>
-          </a>
-   </div> 
+        <a href="http://nationalsocialsummit.org/index.html">
+        <img alt="NSS Event Logo" src="event_logo.png" title="NSS Event Logo" width="270px" height="120px">
+        </a> 
 
 <div id="container" >
     <form id="contact" name="loginform" action="loginValdn2.php" method="post" >
+    
+    <div align="center" >
+       <a href="login1.php">
+          <button type="button" class="round"><marquee>Click Here ! Login For Campus Ambassadorss</marquee></button>
+       </a>
+    </div> 
+    
         <fieldset>
-            <legend>Login For Other Participants</legend>
+            <p><h3 style="text-align:center">Login For Delegates</h3></p>
             <p>
                 <label for="userId">User ID</label>
                 <input type="tel" name="userId" id="userId" placeholder="Mobile Number"/>
@@ -44,7 +55,7 @@
                 <input type="password" name="pswd" id="pswd" placeholder="Enter your passsword"/>
             </p>
 			<hr style="border-width: 2px;" />
-                <button  type="submit">Login<button/>
+                <button  type="submit">Login</button>
         </fieldset>
     </form>
 </div>

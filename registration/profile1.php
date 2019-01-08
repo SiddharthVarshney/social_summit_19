@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['userId'])){
-        	header('location:http://www.nationalsocialsummit.org/registration/login1.php');
+        	header('location:http://nationalsocialsummit.org/registration/login1.php');
 }
 
 
@@ -17,6 +17,7 @@ $result=mysqli_query($conn,$q1);
 
 
 $row = mysqli_fetch_assoc($result);
+
         $_SESSION['name']=$row["name"];
 	$_SESSION['number']=$row["number"];
 	$_SESSION['emailId']=$row["emailId"];
@@ -50,14 +51,28 @@ mysqli_close($conn);
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
 <style>
+
+
         td{     border:1px solid black; padding:5px;    }
-		body{	padding: 20px; background-image: url("contact-background-image.png");	}
+	body{	padding: 20px; background-image: url("contact-background-image.png");	}
+        
+        .round{
+	padding:5px;
+	font-size:22px;
+	background-color:#f5de78;
+	color:#0e666c;
+        border-radius:30px;    }
+                
+                
 </style>
 </head>
 <body >
-	<img src="event_logo.png" alt="SoloLearn HTML" title="This is SoloLern HTML picture" />
+        <a href="http://nationalsocialsummit.org/index.html">
+        <img alt="NSS Event Logo" src="event_logo.png" title="NSS Event Logo" width="270px" height="120px">
+        </a>
+	<br/><br/>
 	
-        <div  align="center" style="background-color:white; padding:20px; margin:auto; width:700px;
+        <div align="center" style="background-color:white; padding:20px; margin:auto; width:700px;
 		font-size:30px; border:2px solid black;">
 
 <hr width="50%" size="5px" color="purpal"/>
@@ -75,8 +90,15 @@ National Social Summit Profile<br/>
 	<tr><td>College :</td><td><?php echo $_SESSION['college']; ?></td></tr>
 	<tr><td>College State :</td><td><?php echo $_SESSION['collegeState']; ?></td></tr>
 	<tr><td>Your Referral Code :</td><td><?php echo $_SESSION['refCode']; ?></td></tr>
-</table></div>
-	<?php session_destroy(); ?>
-    <button><a href="logout.php">LOGOUT</a></button>
+</table>
+</div>
+	<?php session_destroy(); ?> 
+        <br/><br/>
+        <div align="center" >
+       <a href="logout.php">
+          <button class="round" >&nbsp;&nbsp;&nbsp; LOGOUT &nbsp;&nbsp;&nbsp;</button>
+       </a>
+     </div> 
+     
 </body>
 </html>

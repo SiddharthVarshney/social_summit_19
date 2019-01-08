@@ -8,31 +8,32 @@
                 <link rel="icon" href="/images/logo_without_text.png" type="image/gif" sizes="16x16" />
 		<link rel="stylesheet" type="text/css" media="screen" href="nss.css" />
 		<style>
-			#contact legend{	font-size:30px; font-weight:bold;
-								font-style:oblique; font-variant:none;	}
+			#contact legend{	font-size:30px; font-weight:bold;	}
 			fieldset{	border:0px solid white; padding:30px;	}
 			body{	padding: 20px; background-image: url("contact-background-image.png");	}
 		</style>
 	</head>
 	<body>
         
-	<img src="event_logo.png" />
-        
-        
-        <div>
-          <a href="registration2.php">
-          <button type="button" class="btn  btn-lg" style="position:absolute">Register as Delegate</button>
-          </a>
-	</div> 
+        <a href="http://nationalsocialsummit.org/index.html">
+        <img alt="NSS Event Logo" src="event_logo.png" title="NSS Event Logo" width="270px" height="120px">
+        </a>
+	<br/><br/>
         
 		<div id="container" >
-
+                
 <!-- text, password, datetime, datetime- local, date, month, time, week, number, email, url, search, tel, and color.-->
 
 			<form name="contact" id="contact" action="registrationvldn1.php"method="post" >
-				<fieldset>
-					<h3 style="text-align:center">Register as Campus Ambassador</h3>
-					<p>
+                        
+                        <div align="center" >
+                          <a href="registration2.php">
+                          <button type="button" class="round"><marquee>Click Here ! Registration For Delegates</marquee></button>
+                          </a>
+                        </div> 
+                                <fieldset>
+  					<p><h3 style="text-align:center">Register As Campus Ambassador</h3></p>
+                                        <p>
 						<label for="name">Full Name : </label>
 						<input type="text" id="name" name="name" minlength="7" maxlength="20" placeholder="Enter Your Name" required />
 					</p>
@@ -70,18 +71,20 @@
 					<input type="text" id="collegeState" name="collegeState" placeholder="college State" required />
 					</p>
 					<p>
-						<label for="pswd">password : </label>
-						<input type="password" id="pswd" name="pswd" minlength="7" maxlength="15" placeholder="Enter Your password" required />
+						<label for="pswd">Password : </label>
+						<input type="password" id="pswd" name="pswd" minlength="7" maxlength="15" placeholder="Enter Password" required />
 					</p>
 					<p>
-						<label for="rePswd">Confirm password : </label>
-						<input type="password" id="rePswd" name="rePswd" minlength="7" maxlength="15" placeholder="Enter Your password" required />
+						<label for="rePswd">Confirm Password : </label>
+						<input type="password" id="rePswd" name="rePswd" minlength="7" maxlength="15" placeholder="Confirm Password" required />
 					</p>
-				</fieldset>
-				<hr style="border-width: 2px;" />
-				<p style="text-align:center;">
-					<input type="submit" value="SUBMIT" />&nbsp;&nbsp;&nbsp;<input type="reset" value="RESET" />
-				</p>
+                                        
+                                        <p><br/>
+                                        <hr style="border-width: 2px;" /></p>
+                                        <p>
+                                        <button  type="submit">SUBMIT</button>
+                                        </p>
+                                </fieldset>
 			</form>
 		</div>
 	</body>

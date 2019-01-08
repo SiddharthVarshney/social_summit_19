@@ -12,7 +12,7 @@ $pswd=$_POST['pswd'];
 $rePswd=$_POST['rePswd'];
 
 if($pswd != $rePswd){
-	header('location:http://www.nationalsocialsummit.org/registration/registration1.php');
+	header('location:http://nationalsocialsummit.org/registration/registration1.php');
 }
 
 $conn=mysqli_connect('fdb24.atspace.me','2904622_mbook','mohit1234','2904622_mbook');
@@ -26,7 +26,7 @@ $num=mysqli_num_rows($result);
 
 if($num!=0){
 	// pop up box
-	header('location:http://www.nationalsocialsummit.org/registration/registration1.php');
+	header('location:http://nationalsocialsummit.org/registration/registration1.php');
 }
 
 // create a query
@@ -45,8 +45,30 @@ session_destroy();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+             .round{
+	padding:5px;
+        
+	font-size:22px;
+	background-color:#f5de78;
+	color:#0e666c;
+        border-radius:30px;    }
+        
+    
+    </style>
 </head>
 <body>
-    <h1>Registration complet !</h1>
+        <a href="http://nationalsocialsummit.org/index.html">
+        <img alt="NSS Event Logo" src="event_logo.png" title="NSS Event Logo" width="270px" height="120px">
+        </a>
+        
+        
+        <div align="center" >
+       <a href="http://nationalsocialsummit.org/index.html">
+          <button class="round" >&nbsp;&nbsp;&nbsp; HOME &nbsp;&nbsp;&nbsp;</button>
+       </a>
+     </div> 
+        
+    <h1>Registration complete !</h1>
 </body>
 </html>

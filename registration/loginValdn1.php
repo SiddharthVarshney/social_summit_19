@@ -15,12 +15,12 @@ $num=mysqli_num_rows($result);
 if($num==0){
 
         mysqli_close($conn);
-	header('location:http://www.nationalsocialsummit.org/registration/registration1.php');
+	header('location:http://nationalsocialsummit.org/registration/registration1.php');
         }
 
 else{
          $_SESSION['userId']=$userId;
-	header('location:http://www.nationalsocialsummit.org/registration/profile1.php');
+	header('location:http://nationalsocialsummit.org/registration/profile1.php');
         }
 
 ?>

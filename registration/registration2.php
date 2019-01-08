@@ -4,33 +4,36 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>MBook</title>
+		<title>National Social Summit</title>
                 <link rel="icon" href="/images/logo_without_text.png" type="image/gif" sizes="16x16" />
 		<link rel="stylesheet" type="text/css" media="screen" href="nss.css" />
 		<style>
-			#contact legend{	font-size:30px; font-weight:bold;
-								font-style:oblique; font-variant:none;	}
-			fieldset{	border:0px solid white; padding:30px;	}
-			body{	padding: 20px; background-image: url("contact-background-image.png");	}
+                        #contact legend{    font-size:30px; font-weight:bold;
+					font-style:none; font-variant:none;	}
+                        fieldset{	border:0px solid white; padding:30px;	}
+                        body{	padding: 20px; background-image: url("contact-background-image.png");	}
 		</style>
 	</head>
 	<body>
-	<img src="event_logo.png" alt="SoloLearn HTML" title="This is SoloLern HTML picture" />
         
         
-        <div>
-          <a href="registration1.php">
-          <button type="button" class="btn  btn-lg">Registration for Campus Ambassador ! Click Here</button>
-          </a>
-	</div> 
+        <a href="http://nationalsocialsummit.org/index.html">
+        <img alt="NSS Event Logo" src="event_logo.png" title="NSS Event Logo" width="270px" height="120px">
+        </a>
+	<br/><br/>
 	
 		<div id="container" >
 
 <!-- text, password, datetime, datetime- local, date, month, time, week, number, email, url, search, tel, and color.-->
 
 			<form name="contact" id="contact" action="registrationvldn2.php"method="post" >
+                        <div align="center" >
+                          <a href="registration1.php">
+                          <button type="button" class="round"><marquee>Click Here ! Registration For Campus Ambassador</marquee></button>
+                          </a>
+                        </div>
 				<fieldset>
-					<legend>NSS Registration For Others</legend>
+  					<p><h3 style="text-align:center">Register As Delegate</h3></p>
 					<p>
 						<label for="name">Full Name : </label>
 						<input type="text" id="name" name="name" minlength="7" maxlength="20" placeholder="Enter Your Name" required />
@@ -66,7 +69,7 @@
 					</p>
 					<p>
 					<label for="collegeState">College State : </label>
-					<input type="text" id="collegeState" name="CollegeState" placeholder="College State" required />
+					<input type="text" id="collegeState" name="collegeState" placeholder="College State" required />
 					</p>
 					<p>
 					<label for="refcode">Referral Code : </label>
@@ -74,17 +77,19 @@
 					</p>
 					<p>
 						<label for="pswd">Password : </label>
-						<input type="password" id="pswd" name="pswd" minlength="7" maxlength="15" placeholder="Enter Your password" required />
+						<input type="password" id="pswd" name="pswd" minlength="7" maxlength="15" placeholder="Enter Password" required />
 					</p>
 					<p>
-						<label for="rePswd">Confirm password : </label>
-						<input type="password" id="rePswd" name="rePswd" minlength="7" maxlength="15" placeholder="Enter Your password" required />
+						<label for="rePswd">Confirm Password : </label>
+						<input type="password" id="rePswd" name="rePswd" minlength="7" maxlength="15" placeholder="Confirm Password" required />
 					</p>
+                                        
+                                        <p><br/>
+                                        <hr style="border-width: 2px;" /></p>
+                                        <p>
+                                        <button  type="submit">SUBMIT</button>
+                                        </p>
 				</fieldset>
-				<hr style="border-width: 2px;" />
-				<p style="text-align:center;">
-					<input type="submit" value="SUBMIT" />&nbsp;&nbsp;&nbsp;<input type="reset" value="RESET" />
-				</p>
 			</form>
 		</div>
 	</body>
