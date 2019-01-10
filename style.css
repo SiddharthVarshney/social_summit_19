@@ -248,6 +248,27 @@ body {
 }
 
 /*------------------------------------------------------------
+# nss and iitr logos
+-----------------------------------------------------------*/
+.hero-content .logos{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:40px; 
+  width:50%;
+}
+.hero-content .nss-logo,.iitr-logo{
+  padding: 20px;
+  max-width: 150px;
+  height: 150px;
+}
+.hero-content .divider{
+  width: 4px;
+  background-color: #fff;
+  margin: 10px 0 10px 0;
+}
+
+/*------------------------------------------------------------
 # theme_content
 -----------------------------------------------------------*/
 
@@ -474,7 +495,7 @@ body {
 }
 
 .typewriter h2 {
-  height: 160px;
+  height: 120px;
   padding: auto;
   font-family: mountains;
   color: #59f1e7;
@@ -1306,7 +1327,7 @@ body {
 }
 
 .main-content {
-  margin: 120px 0;
+  margin: 100px 0 40px 0;
 }
 
 .main-content .entry-header .entry-title p {
@@ -1318,11 +1339,27 @@ body {
 }
 
 .main-content .entry-header .entry-title h2 {
+  width: 100%;
   margin: 0;
-  padding: 0;
   font-size: 48px;
   font-weight: 600;
-  color: #040608;
+  color: #00666b;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .main-content {
+    margin-top: 20px;
+  }
+
+  .main-content .entry-header .entry-title h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: #00666b;
+    text-align: center;
+  }
 }
 
 .about-us .main-content .entry-content {
