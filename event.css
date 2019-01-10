@@ -1,3 +1,32 @@
+.timeline-header {
+  margin: 0 0 40px 0;
+}
+
+.timeline-header h2 {
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #00666b;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .timeline-header {
+    margin-top: 20px;
+  }
+
+  .timeline-header h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: #00666b;
+    text-align: center;
+  }
+}
+
+
 .main-timeline {
   font-family: tahoma;
   padding: 20px 0;
