@@ -251,7 +251,7 @@ body {
 # nss and iitr logos
 -----------------------------------------------------------*/
 .hero-content .logos{
-  float: right;
+  display: block;
   margin-bottom:40px; 
   width:50%;
 }
