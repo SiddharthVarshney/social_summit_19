@@ -1260,6 +1260,51 @@ body {
   }
 }
 
+.nss_logo{
+  width:160px;
+  height:160px;
+  margin-right:40px;
+}
+@media screen and (min-width:768px){
+  .nss_logo{
+    float:right;
+  }
+    
+}
+.add{
+  float:left;
+  text-align:left;
+  font-size:20px;
+  font-family: 'Calibri';
+  margin-top: 40px;
+  margin-left: 40px;
+  font-weight: bold;
+  
+}
+@media screen and (max-width:768px) {
+  .address-logo{
+    width: max-content;
+    flex:column;
+    position: relative;
+    text-align: center;
+    margin-left: 150px;
+  }
+  .add{
+    text-align:center;
+    font-size:10px;
+    font-family: 'Calibri';
+    margin: 8px;
+    font-weight: bold;
+  }
+  .nss_logo{
+    width:40px;
+    height:40px;
+    margin-left:40px;
+  }
+
+}
+
+
 /*------------------------------------------------------------
 # about-us
 ------------------------------------------------------------*/
@@ -2110,39 +2155,9 @@ img {
 .icon-box-3 .entry-header::before {
   content: "03.";
 }
-.imk{
-  width:80px;
-  height:80px;
-  
-}
-@media screen and (min-width:768px){
-  .imk{
-    float:right;
-  }
-  .addi{
-    display:none;
-  }
-  
-}
-.add{
-  float:left;
-  text-align:left;
-  font-size:20px;
-  font-family: "Poppins", sans-serif;
-}
-@media screen and (max-width:768px) {
-  .add {
-    display: none;
-  }
 
-}
-.addi{
-  
-  color:black;
-  font-size:10px;
-  font-family: "Poppins", sans-serif;
-}
-.intr{
-  font-size: 20px;
-}
+
+
+
+
 
