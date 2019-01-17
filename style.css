@@ -72,15 +72,15 @@ body {
   font-weight: bold;
   font-family: "Calibri";
 }
-.site-branding{
-  flex:row;
+.site-branding {
+  flex: row;
 }
-.site-branding .iitr{
+.site-branding .iitr {
   font-family: "Calibri";
   font-size: 12px;
 }
-@media screen and (max-width:720px){
-  .site-branding .iitr{
+@media screen and (max-width: 720px) {
+  .site-branding .iitr {
     font-family: "Calibri";
     font-size: 8px;
   }
@@ -262,17 +262,18 @@ body {
 /*------------------------------------------------------------
 # nss and iitr logos
 -----------------------------------------------------------*/
-.hero-content .logos{
+.hero-content .logos {
   display: block;
-  margin-bottom:40px; 
-  width:50%;
+  margin-bottom: 40px;
+  width: 50%;
 }
-.hero-content .nss-logo,.iitr-logo{
+.hero-content .nss-logo,
+.iitr-logo {
   padding: 20px;
   max-width: 150px;
   height: 150px;
 }
-.hero-content .divider{
+.hero-content .divider {
   width: 4px;
   background-color: #fff;
   margin: 10px 0 10px 0;
@@ -497,7 +498,6 @@ body {
     font-size: 80px;
     text-align: center;
     margin: 50px;
-    
   }
 
   .hero-content .typewriter .entry-meta-date {
@@ -506,11 +506,11 @@ body {
 }
 
 .typewriter h2 {
-  height: 120px;
-  padding: auto;
+  height: 150px;
+  /* padding: auto; */
   font-family: mountains;
   color: #59f1e7;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 80px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #efc319; /* The typwriter cursor */
@@ -948,19 +948,16 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
-
-
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.5);
-    right:10px;
-    padding: 30px;
-    color: #000 !important;
-    fill: black !important;
-    stroke: black !important;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
 }
-
 
 /*------------------------------------------------------------
 # home-page-last-news
@@ -1260,50 +1257,46 @@ body {
   }
 }
 
-.nss_logo{
-  width:160px;
-  height:160px;
-  margin-right:40px;
+.nss_logo {
+  width: 160px;
+  height: 160px;
+  margin-right: 40px;
 }
-@media screen and (min-width:768px){
-  .nss_logo{
-    float:right;
+@media screen and (min-width: 768px) {
+  .nss_logo {
+    float: right;
   }
-    
 }
-.add{
-  float:left;
-  text-align:left;
-  font-size:20px;
-  font-family: 'Calibri';
+.add {
+  float: left;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Calibri";
   margin-top: 40px;
   margin-left: 40px;
   font-weight: bold;
-  
 }
-@media screen and (max-width:768px) {
-  .address-logo{
+@media screen and (max-width: 768px) {
+  .address-logo {
     width: max-content;
-    flex:column;
+    flex: column;
     position: relative;
     text-align: center;
     margin-left: 150px;
   }
-  .add{
-    text-align:center;
-    font-size:10px;
-    font-family: 'Calibri';
+  .add {
+    text-align: center;
+    font-size: 10px;
+    font-family: "Calibri";
     margin: 8px;
     font-weight: bold;
   }
-  .nss_logo{
-    width:40px;
-    height:40px;
-    margin-left:40px;
+  .nss_logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
   }
-
 }
-
 
 /*------------------------------------------------------------
 # about-us
@@ -1527,14 +1520,14 @@ body {
   text-align: left;
   transition: transform 200ms ease;
 }
-@media screen and (min-width:768px){
-  .outeri{
-    display:none;
+@media screen and (min-width: 768px) {
+  .outeri {
+    display: none;
   }
 }
-@media screen and (max-width:768px){
-  .outer{
-    display:none;
+@media screen and (max-width: 768px) {
+  .outer {
+    display: none;
   }
 }
 .texti {
@@ -1763,7 +1756,7 @@ body {
   color: #ff2630;
 }
 /* ------------------------------------------------------------
-# Blog
+# Partners
 ------------------------------------------------------------ */
 .blog-page {
   width: 100%;
@@ -1771,12 +1764,45 @@ body {
   background: #fff;
 }
 
-.containers {
-  width: 90%;
-  max-width: 1300px;
-  margin: 2em auto;
-  overflow: hidden;
-  padding: 0.5em;
+.grid-logos {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.grid-logos__item {
+  align-self: center;
+  border: solid 1px #ddd;
+  height: 150px;
+  flex-basis: 100%;
+  text-align: center;
+}
+@media all and (min-width: 450px) {
+  .grid-logos__item {
+    flex-basis: 50%;
+  }
+}
+@media all and (min-width: 900px) {
+  .grid-logos__item {
+    flex-basis: 25%;
+  }
+}
+.grid-logos img {
+  max-height: 600px;
+  max-width: 300px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 img {
@@ -2155,4 +2181,52 @@ img {
 .icon-box-3 .entry-header::before {
   content: "03.";
 }
+.faq{
 
+  padding:30px;
+  color:black;
+  font-family: sans-serif;
+}
+@media screen and (max-width:768px){
+  .faq{
+    padding:40px;
+   
+  }
+  h1{
+    font-size:30px;
+  }
+  .contact,.info{
+    display:none;
+  }
+  
+  
+}
+@media screen and (min-width:768px){
+  .contacti{
+    display:none;
+  }}
+.contact{
+  font-size:20px;
+  padding:30px;
+  color:black;
+  font-family: sans-serif;
+  text-align: center;
+}
+.info{
+  font-weight:bold;
+  font-size:20px;
+}
+.mate{
+  padding-left: 180px;
+}
+.contacti{
+  font-size:20px;
+  padding:30px;
+  color:black;
+  font-family: sans-serif;
+  text-align: center;
+}
+.infoi{
+  font-weight:bold;
+  font-size:20px;
+}
