@@ -1,5 +1,11 @@
-
-
+.content  .header{
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #00666b;
+  text-align: center;
+}
   .grid {
     position: relative;
     clear: both;
