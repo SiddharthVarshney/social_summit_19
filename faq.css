@@ -1,49 +1,21 @@
-.faq{
+.faq {
+  margin: 100px;
+}
+.faq .faq-header {
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 500;
+  color: #00666b;
+  text-align: justify;
+  font-family: "Calibri";
+}
 
-    /* padding:30px; */
-    color:black;
-    font-family: sans-serif;
-  }
-  @media screen and (max-width:768px){
-    .faq{
-      padding:40px;
-     
-    }
-    h1{
-      font-size:30px;
-    }
-    .contact,.info{
-      display:none;
-    }
-    
-    
-  }
-  @media screen and (min-width:768px){
-    .contacti{
-      display:none;
-    }}
-  .contact{
-    font-size:20px;
-    padding:30px;
-    color:black;
-    font-family: sans-serif;
-    text-align: center;
-  }
-  .info{
-    font-weight:bold;
-    font-size:20px;
-  }
-  /* .mate{
-    padding-left: 180px;
-  } */
-  .contacti{
-    font-size:20px;
-    padding:30px;
-    color:black;
-    font-family: sans-serif;
-    text-align: center;
-  }
-  .infoi{
-    font-weight:bold;
-    font-size:20px;
-  }
+.faq .faq-para {
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-align: justify;
+}

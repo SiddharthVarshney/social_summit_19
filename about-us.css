@@ -1,0 +1,20 @@
+.contact-team {
+  margin-bottom: 48px;
+}
+.contact-team h1 {
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 500;
+  color: #00666b;
+  text-align: center;
+  font-family: "Cambria";
+}
+
+.contact-team .team-info p {
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
