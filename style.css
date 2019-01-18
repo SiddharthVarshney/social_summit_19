@@ -2181,52 +2181,50 @@ img {
 .icon-box-3 .entry-header::before {
   content: "03.";
 }
-.faq{
-
-  padding:30px;
-  color:black;
+.faq {
+  padding: 30px;
+  color: black;
   font-family: sans-serif;
 }
-@media screen and (max-width:768px){
-  .faq{
-    padding:40px;
-   
+@media screen and (max-width: 768px) {
+  .faq {
+    padding: 40px;
   }
-  h1{
-    font-size:30px;
+  h1 {
+    font-size: 30px;
   }
-  .contact,.info{
-    display:none;
+  .contact,
+  .info {
+    display: none;
   }
-  
-  
 }
-@media screen and (min-width:768px){
-  .contacti{
-    display:none;
-  }}
-.contact{
-  font-size:20px;
-  padding:30px;
-  color:black;
+@media screen and (min-width: 768px) {
+  .contacti {
+    display: none;
+  }
+}
+.contact {
+  font-size: 20px;
+  padding: 30px;
+  color: black;
   font-family: sans-serif;
   text-align: center;
 }
-.info{
-  font-weight:bold;
-  font-size:20px;
+.info {
+  font-weight: bold;
+  font-size: 20px;
 }
-.mate{
+.mate {
   padding-left: 180px;
 }
-.contacti{
-  font-size:20px;
-  padding:30px;
-  color:black;
+.contacti {
+  font-size: 20px;
+  padding: 30px;
+  color: black;
   font-family: sans-serif;
   text-align: center;
 }
-.infoi{
-  font-weight:bold;
-  font-size:20px;
+.infoi {
+  font-weight: bold;
+  font-size: 20px;
 }
