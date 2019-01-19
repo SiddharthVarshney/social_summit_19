@@ -200,14 +200,6 @@ figure.effect-apollo:hover p {
   clear: both;
 }
 
-body {
-  background: #2f3238;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1em;
-  /* font-family: "?"; */
-}
-
 a {
   outline: none;
   color: #3498db;
