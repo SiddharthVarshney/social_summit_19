@@ -2,7 +2,7 @@
   position: relative;
   clear: both;
   margin: 0 auto;
-  padding: 1em 0 4em;
+  padding: 1em 0;
   max-width: 1000px;
   list-style: none;
   text-align: center;
@@ -232,10 +232,17 @@ section {
   margin: 10px;
   font-family: inherit;
 }
-
-.content > h2:first-child {
-  padding-top: 0em;
+@media screen and (max-width:720px){
+  .content > h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: #00666b;
+    text-align: center;
+  }
 }
+
 
 /* Header */
 .codrops-header {
