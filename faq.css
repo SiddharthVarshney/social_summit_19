@@ -19,12 +19,12 @@
   color: #000;
   text-align: justify;
 }
-.faq .map-frame{
-  width:800px;
-  height:450px;
+.faq .map-frame {
+  width: 800px;
+  height: 450px;
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width: 720px) {
   .faq {
     margin: 30px;
   }
@@ -37,7 +37,7 @@
     text-align: justify;
     font-family: "Calibri";
   }
-  
+
   .faq .faq-para {
     width: 100%;
     margin: 0;
@@ -46,8 +46,8 @@
     text-align: justify;
   }
 
-  .faq .map-frame{
-    width:300px;
-    height:200px;
+  .faq .map-frame {
+    width: 300px;
+    height: 200px;
   }
 }
