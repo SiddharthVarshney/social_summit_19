@@ -30,6 +30,7 @@ body {
   flex: 0 0 20%;
   max-width: 20%;
 }
+
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
@@ -72,19 +73,23 @@ body {
   font-weight: bold;
   font-family: "Calibri";
 }
+
 .site-branding {
   flex: row;
 }
+
 .site-branding .iitr {
   font-family: "Calibri";
   font-size: 12px;
 }
+
 @media screen and (max-width: 720px) {
   .site-branding .iitr {
     font-family: "Calibri";
     font-size: 8px;
   }
 }
+
 /* If the screen size is 992px wide or more, set the font-size of <div> to 80px */
 
 /* If the screen size is 991px wide or less, set the font-size of <div> to 30px */
@@ -93,6 +98,7 @@ body {
     font-size: 18px;
   }
 }
+
 /*------------------------------------------------------------
 ### site-navigation
 ------------------------------------------------------------*/
@@ -106,6 +112,7 @@ body {
   height: 85px;
   background-size: cover;
 }
+
 @media screen and (max-width: 720px) {
   .site-header .theme-logo {
     background: url(/images/event_logo.png);
@@ -114,6 +121,7 @@ body {
     background-size: cover;
   }
 }
+
 /*
   Hamburger Menu
 ----------------------------------------*/
@@ -188,6 +196,7 @@ body {
 .site-navigation.show {
   height: auto;
 }
+
 .site-navigation ul {
   position: fixed;
   top: 0;
@@ -267,12 +276,14 @@ body {
   margin-bottom: 40px;
   width: 50%;
 }
+
 .hero-content .nss-logo,
 .iitr-logo {
   padding: 20px;
   max-width: 150px;
   height: 150px;
 }
+
 .hero-content .divider {
   width: 4px;
   background-color: #fff;
@@ -307,6 +318,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 .card-2 .main-content {
   text-align: justify;
 }
@@ -324,6 +336,7 @@ body {
     position: relative;
     width: auto;
   }
+
   .card h2 {
     font-size: 20px;
   }
@@ -339,6 +352,7 @@ body {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+
   .card-2 .main-content {
     text-align: justify;
   }
@@ -363,6 +377,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .box .btn {
   display: inline-block;
   padding: 8px 24px;
@@ -405,6 +420,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
+
   .box .btn {
     display: inline-block;
     padding: 8px 24px;
@@ -414,6 +430,7 @@ body {
     font-size: 14px;
     font-weight: bold;
   }
+
   .box .btn-primary {
     border-color: #226663;
     color: #226663;
@@ -433,15 +450,18 @@ body {
     height: 300px;
   }
 }
+
 .box .btn-primary {
   border-color: #226663;
   color: #226663;
   margin: 10px;
 }
+
 .box .btn-primary:hover {
   background: #226663;
   color: #fff;
 }
+
 /*------------------------------------------------------------
 # hero
 -----------------------------------------------------------*/
@@ -467,6 +487,7 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+
 .hero-content .custom-button .btn {
   background-color: #226663;
   color: #fcca04;
@@ -480,6 +501,7 @@ body {
     text-align: center;
     margin-top: 60px 0px 20px 0px;
   }
+
   .hero-content .custom-button .btn {
     background-color: #226663;
     color: #fcca04;
@@ -512,10 +534,14 @@ body {
   color: #59f1e7;
   margin-top: 50px;
   font-size: 80px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #efc319; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #efc319;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
   animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
   animation-delay: 1s;
 }
@@ -534,10 +560,14 @@ body {
     margin: 0 auto;
     text-align: center;
     font-size: 22px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid #efc319; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: 0.15em; /* Adjust as needed */
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #efc319;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    letter-spacing: 0.15em;
+    /* Adjust as needed */
     animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 1s;
   }
@@ -558,6 +588,7 @@ body {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -565,10 +596,12 @@ body {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: orange;
   }
@@ -593,6 +626,7 @@ body {
 .content-section .middle-cover img {
   max-width: 100%;
 }
+
 */
 
 /*------------------------------------------------------------
@@ -702,9 +736,7 @@ body {
     width: calc(100% + 75px);
   }
 
-  .lineup-artists
-    .lineup-artists-wrap:nth-of-type(even)
-    .lineup-artists-description-container {
+  .lineup-artists .lineup-artists-wrap:nth-of-type(even) .lineup-artists-description-container {
     right: -75px;
     left: auto;
   }
@@ -1261,11 +1293,13 @@ body {
   height: 160px;
   margin-right: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .nss_logo {
     float: right;
   }
 }
+
 .add {
   float: left;
   text-align: left;
@@ -1275,6 +1309,7 @@ body {
   margin-left: 40px;
   font-weight: bold;
 }
+
 @media screen and (max-width: 768px) {
   .address-logo {
     width: max-content;
@@ -1283,6 +1318,7 @@ body {
     text-align: center;
     margin-left: 150px;
   }
+
   .add {
     text-align: center;
     font-size: 10px;
@@ -1290,6 +1326,7 @@ body {
     margin: 8px;
     font-weight: bold;
   }
+
   .nss_logo {
     width: 40px;
     height: 40px;
@@ -1496,6 +1533,7 @@ body {
   display: flex;
   padding-bottom: 58px;
 }
+
 .outer {
   display: flex;
   width: 100%;
@@ -1531,25 +1569,30 @@ body {
   text-align: left;
   transition: transform 200ms ease;
 }
+
 @media screen and (min-width: 768px) {
   .outeri {
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   .outer {
     display: none;
   }
 }
+
 .texti {
   font-size: 18px;
   color: #fff;
   text-align: center;
   transition: transform 200ms ease;
 }
+
 .inneri:hover .texti {
   transform: translateX(-3%);
 }
+
 .inneri {
   opacity: 0.7;
   padding: 50px;
@@ -1571,23 +1614,28 @@ body {
   width: 100%;
   height: 100%;
 }
+
 /* ------------------------------------------------------------
 # Page Header
 ------------------------------------------------------------ */
 .tickets-page .page-header {
   background: url("images/cover-images/events.jpg") no-repeat;
 }
+
 .tickets-page .tabs {
   margin-top: 80px;
 }
+
 .tickets-page .tabs ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .tickets-page .tabs .active {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
 }
+
 .tabs .tab-nav {
   padding: 10px 10px;
   margin-right: 0;
@@ -1597,41 +1645,50 @@ body {
   color: #040608;
   cursor: pointer;
 }
+
 .tabs .tab-nav:hover {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
 }
+
 .tickets-page .tabs .tabs-container {
   margin-top: 5px;
   box-shadow: 13px 26px 139px rgba(0, 0, 0, 0.1);
   background: #fff;
 }
+
 .tickets-page .tabs .tab-content {
   padding: 48px 15px;
   color: #989898;
   font-size: 15px;
   line-height: 1.8;
 }
+
 @media screen and (min-width: 576px) {
   .tabs .tab-nav {
     padding: 20px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .tabs .tab-content {
     padding: 48px;
   }
+
   .tabs .tab-nav {
     padding: 20px 60px;
     margin-right: 10px;
     font-size: 15px;
   }
 }
+
 .tickets-page .single-event-details-row {
   margin-bottom: 30px;
 }
+
 .tickets-page .single-event-details-row:nth-last-of-type(1) {
   margin-bottom: 0;
 }
+
 .single-event-details,
 .single-event-details a,
 .single-event-details label {
@@ -1639,76 +1696,95 @@ body {
   font-weight: 500;
   color: #040608;
 }
+
 .single-event-details label {
   display: block;
   margin-bottom: 0;
   color: #232127;
 }
+
 .single-event-details p,
 .single-event-details a {
   color: #989898;
 }
+
 .single-event-details-row p.sold-out {
   color: #040608;
 }
+
 .single-event-details-row p.sold-out span {
   color: #ff0000;
 }
+
 .single-event-map {
   width: 100%;
   margin-top: 30px;
 }
+
 .single-event-map iframe {
   width: 100%;
   height: 460px;
 }
+
 @media screen and (min-width: 768px) {
   .tickets-page .single-event-heading {
     width: auto;
   }
+
   .single-event-details {
     width: 220px;
   }
+
   .single-event-map {
     width: calc(100% - 220px);
     margin: 0;
   }
+
   .event-tickets {
     padding: 40px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .single-event-details {
     width: 340px;
   }
+
   .single-event-map {
     width: calc(100% - 340px);
     margin: 0;
   }
+
   .event-tickets .ticket-row {
     margin-bottom: 15px;
   }
+
   .ticket-type {
     width: calc(100% - 400px);
     margin-bottom: 0;
   }
+
   .event-tickets .number-of-ticket {
     margin-bottom: 0;
   }
 }
+
 .tickets-page .event-tickets {
   padding: 72px 48px;
   background: #fff;
   box-shadow: 13px 26px 139px rgba(0, 0, 0, 0.1);
 }
+
 .tickets-page .event-tickets .ticket-row {
   background: #f4f6f7;
   margin-bottom: 15px;
 }
+
 .tickets-page .event-tickets .ticket-row .ticket-type {
   padding: 15px 24px;
   margin-right: 15px;
 }
+
 .tickets-page .event-tickets .ticket-row .entry-title {
   font-size: 18px;
   font-weight: 500;
@@ -1717,6 +1793,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .tickets-page .main-content .event-tickets .ticket-type span {
   font-size: 16px;
   font-weight: 500;
@@ -1725,17 +1802,20 @@ body {
   padding: 0;
   width: 300px;
 }
+
 .tickets-page .main-content .event-tickets .ticket-price {
   font-size: 18px;
   font-weight: 500;
   color: #03070c;
   width: 50px;
 }
+
 .tickets-page .event-tickets .number-of-tickets {
   width: 120px;
   padding: 15px 24px;
   margin-right: 25px;
 }
+
 .tickets-page .number-of-tickets .increase-ticket,
 .tickets-page .number-of-tickets .decrease-ticket {
   font-size: 18px;
@@ -1743,6 +1823,7 @@ body {
   color: #03070c;
   cursor: pointer;
 }
+
 .tickets-page .number-of-tickets .ticket-count {
   font-size: 18px;
   font-weight: 400;
@@ -1752,6 +1833,7 @@ body {
   text-align: center;
   background: #f3f8f9;
 }
+
 .tickets-page .clear-ticket-count {
   font-size: 16px;
   font-weight: 500;
@@ -1759,6 +1841,7 @@ body {
   margin-right: 60px;
   cursor: pointer;
 }
+
 .tickets-page .ticket-row .btn {
   background: #f3f8f9;
   width: 100px;
@@ -1766,6 +1849,7 @@ body {
   font-weight: 500;
   color: #ff2630;
 }
+
 /* ------------------------------------------------------------
 # Partners
 ------------------------------------------------------------ */
@@ -1776,10 +1860,12 @@ body {
 }
 
 .grid-logos {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
+
 .grid-logos__item {
   align-self: center;
   border: solid 1px #ddd;
@@ -1787,16 +1873,19 @@ body {
   flex-basis: 100%;
   text-align: center;
 }
+
 @media all and (min-width: 450px) {
   .grid-logos__item {
     flex-basis: 50%;
   }
 }
+
 @media all and (min-width: 900px) {
   .grid-logos__item {
     flex-basis: 25%;
   }
 }
+
 .grid-logos img {
   max-height: 600px;
   max-width: 300px;
@@ -1883,79 +1972,97 @@ img {
 .contact-page .page-header {
   background: url("images/contact-header-background.jpg") no-repeat;
 }
+
 .contact-page .main-content {
   background: #fff;
   box-shadow: 13px 14px 68px rgba(0, 0, 0, 0.1);
 }
+
 .contact-page-map {
   width: 100%;
 }
+
 .contact-page-map iframe {
   width: 100%;
   height: 660px;
 }
+
 .contact-page .contact-details {
   margin-top: 70px;
 }
+
 .contact-page .contact-details .contact-medium {
   padding: 0 20px;
 }
+
 .contact-page .contact-details .contact-medium .contact-icon {
   padding: 0;
   margin-right: 20px;
 }
+
 .contact-page .contact-details .contact-medium .contact-icon img {
   max-width: 100%;
   height: auto;
 }
+
 .contact-page .contact-details .contact-medium .entry-title {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
   color: #040608;
 }
+
 .contact-page .contact-details .contact-medium .entry-content {
   margin-top: 5px;
   font-size: 14px;
   font-weight: 500;
   color: #989898;
 }
+
 .contact-page .get-in-touch {
   margin-top: 115px;
   padding: 0 15px;
 }
+
 @media screen and (min-width: 992px) {
   .contact-page .get-in-touch {
     padding: 0 100px;
   }
 }
+
 .contact-page .get-in-touch .entry-header {
   text-align: center;
 }
+
 .contact-page .get-in-touch .entry-title p {
   font-size: 14px;
   font-weight: 500;
   color: #989898;
   margin: 0;
 }
+
 .contact-page .get-in-touch .entry-title h2 {
   font-size: 48px;
   font-weight: 600;
   color: #050505;
   margin: 5px 0 0;
 }
+
 .contact-page .get-in-touch .entry-content {
   margin-top: 45px;
 }
+
 .contact-page .get-in-touch .entry-content p {
   font-size: 15px;
   color: #989898;
   line-height: 2;
   text-align: center;
 }
+
 .contact-page .main-content .get-in-touch .contact-form {
   margin-top: 120px;
 }
+
 .contact-page .contact-form input[type="text"],
 .contact-page .contact-form input[type="email"],
 .contact-page .contact-form textarea {
@@ -1967,16 +2074,19 @@ img {
   color: #050505;
   outline: none;
 }
+
 .contact-page .contact-form input[type="text"]::placeholder,
 .contact-page .contact-form input[type="email"]::placeholder,
 .contact-page .contact-form textarea::placeholder {
   color: #7f7f7f;
   font-style: italic;
 }
+
 .contact-page .contact-form .submit {
   margin-top: 15px;
   margin-bottom: 120px;
 }
+
 .contact-page .contact-form .submit .btn {
   padding: 15px 30px;
   margin-right: 20px;
@@ -1984,6 +2094,7 @@ img {
   font-weight: 600;
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
+
 /* ------------------------------------------------------------
 # elements-page
 ------------------------------------------------------------ */
@@ -1992,17 +2103,21 @@ img {
   background: url("images/cover-images/home-cover.jpg") no-repeat;
   background-size: cover;
 }
+
 .elements-page .elements-wrap {
   margin-bottom: 110px;
 }
+
 .elements-page .elements-wrap .entry-header h2.entry-title {
   color: #040608;
   font-size: 48px;
   font-weight: 600;
 }
+
 .elements-page .elements-wrap h2.entry-title {
   margin-bottom: 90px;
 }
+
 .elements-page .elements-wrap .entry-content .btn {
   height: 55px;
   width: 165px;
@@ -2013,30 +2128,37 @@ img {
   font-weight: 500;
   color: #040608;
 }
+
 .elements-page .elements-wrap .entry-content .gradient {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
+
 .elements-page .elements-wrap .entry-content .white {
   background: white;
   box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
 }
+
 .elements-page .elements-wrap .entry-content .border-blu {
   border: 2px solid #0de7e4;
 }
+
 .elements-page .elements-wrap .entry-content .color-border {
   border: 2px solid #0de7e4;
   padding: 6px;
   background: #0de7e4;
   background-clip: content-box;
 }
+
 .counter-box {
   text-align: center;
 }
+
 .counter-box .start-counter {
   font-size: 60px;
   font-weight: 500;
   color: #040608;
 }
+
 .counter-box .start-counter,
 .counter-box .counter-k {
   font-size: 60px;
@@ -2044,20 +2166,24 @@ img {
   color: #040608;
   text-align: center;
 }
+
 .counter-box .entry-title {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
   color: #989898;
 }
+
 .tabs ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .tabs ul .active {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf) !important;
 }
+
 .tabs ul .tab-nav {
   padding: 15px 40px;
   line-height: 1;
@@ -2065,21 +2191,25 @@ img {
   font-weight: 600;
   cursor: pointer;
 }
+
 .tabs-container {
   background: #f3f8f9;
   box-shadow: 5px 14px 100px rgba(0, 0, 0, 0.1);
 }
+
 .tabs-container .tab-content {
   display: block;
   padding: 48px;
   background: #fff;
 }
+
 .tabs-container .tab-content .entry-header {
   margin-top: 0;
   font-size: 24px;
   font-weight: 500;
   color: #040608;
 }
+
 .tabs-container .tab-content p {
   margin-top: 35px;
   color: #989898;
@@ -2087,9 +2217,11 @@ img {
   font-weight: 300;
   line-height: 2;
 }
+
 .accordion-and-tabs-wrap .accordion-wrap {
   position: relative;
 }
+
 .accordion-and-tabs-wrap .accordion-wrap .entry-title {
   width: 445px;
   margin-bottom: 20px;
@@ -2098,15 +2230,19 @@ img {
   color: #040608;
   cursor: pointer;
 }
+
 .accordion-and-tabs-wrap .accordion-wrap .entry-title .arrow-d::before {
   content: "-";
 }
+
 .accordion-and-tabs-wrap .accordion-wrap .entry-title .arrow-r::before {
   content: "+";
 }
+
 .accordion-and-tabs-wrap .accordion-wrap .active {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
 }
+
 .accordion-and-tabs-wrap .accordion-wrap .entry-content {
   display: none;
   width: 100%;
@@ -2117,19 +2253,23 @@ img {
   color: #989898;
   line-height: 2;
 }
+
 .accordion-and-tabs-wrap .accordion-wrap .accordion-active {
   display: block;
   margin-top: 0;
 }
+
 .circular-progress-bar {
   margin-bottom: 60px;
   text-align: center;
 }
+
 .circular-progress-bar .circle {
   position: relative;
   width: 210px;
   height: 210px;
 }
+
 .circular-progress-bar .circle strong {
   position: absolute;
   top: 56px;
@@ -2138,6 +2278,7 @@ img {
   font-size: 60px;
   color: #050505;
 }
+
 .circular-progress-bar .entry-title {
   position: absolute;
   top: 145px;
@@ -2148,10 +2289,12 @@ img {
   text-align: center;
   width: 100%;
 }
+
 .icon-box .entry-header {
   position: relative;
   margin: 0;
 }
+
 .icon-box .entry-header::before {
   position: absolute;
   content: "01.";
@@ -2163,6 +2306,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .icon-box .entry-header .entry-title {
   padding-left: 84px;
   margin: 0;
@@ -2170,6 +2314,7 @@ img {
   font-weight: 600;
   color: #050505;
 }
+
 .icon-box .entry-content {
   margin-top: 30px;
   color: #989898;
@@ -2177,12 +2322,15 @@ img {
   line-height: 2;
   word-break: break-all;
 }
+
 .icon-box-1 .entry-header::before {
   content: "01.";
 }
+
 .icon-box-2 .entry-header::before {
   content: "02.";
 }
+
 .icon-box-3 .entry-header::before {
   content: "03.";
 }
