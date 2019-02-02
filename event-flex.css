@@ -3,19 +3,19 @@
   clear: both;
   margin: 0 auto;
   padding: 1em 0;
-  max-width: 1000px;
   list-style: none;
   text-align: center;
 }
 
 /* Common style */
 .grid figure {
+  border-radius: 8px;
   position: relative;
   float: left;
   overflow: hidden;
   margin: 10px 1%;
   /* min-width: 400px; */
-  max-width: 300px;
+  max-width: 350px;
   max-height: 360px;
   width: 48%;
   height: auto;
@@ -90,7 +90,7 @@
 /*-----------------*/
 
 figure.effect-apollo {
-  background: #070707;
+  background: #226663;
 }
 
 figure.effect-apollo img {
@@ -133,6 +133,8 @@ figure.effect-apollo p {
 
 figure.effect-apollo h2 {
   text-align: left;
+  font-family: 'Clibri';
+  font-size: 2.4rem;
 }
 
 figure.effect-apollo:hover img {
@@ -217,7 +219,6 @@ section {
 
 .content {
   margin: 0 auto;
-  max-width: 1000px;
 }
 
 .content > h2 {
