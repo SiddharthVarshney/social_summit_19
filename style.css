@@ -919,7 +919,7 @@ body {
   .homepage-next-events .entry-title h2 {
     width: 100%;
     margin: 0;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     color: #00666b;
     text-align: center;
@@ -1884,6 +1884,13 @@ body {
   transform: translateY(-50%);
 }
 
+@media screen and (max-width:680px){
+  .grid-logos img{
+    height: auto;
+    width: 150px;
+    position: relative;
+  }
+}
 html {
   box-sizing: border-box;
 }
