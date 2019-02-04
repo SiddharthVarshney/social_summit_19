@@ -1,12 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+.tickets-page .page-header {
+  background: url("images/cover-images/speaker-cover.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content {
+  /* margin: ; */
+  
+}
+
+.content > h2 {
+  clear: both;
+  margin: 0;
+  padding: 1em 1% 0;
+  color: #00666b;
+  font-weight: 800;
+  font-size: 3.8em;
+  text-align: center;
+  margin: 0 0 100px 0;
+  font-family: inherit;
+}
+@media screen and (max-width: 720px) {
+  .content > h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: #00666b;
+    text-align: center;
+  }
+}
+
 figure.snip0045 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
   margin: 10px;
   min-width: 380px;
-  max-width: 480px;
+  max-width: 580px;
   width: 100%;
   background: #ffffff;
   color: #000000;
@@ -51,19 +85,10 @@ figure.snip0045 figcaption h2 span {
   font-weight: 800;
 }
 figure.snip0045 figcaption p {
-  font-size: 0.8em;
+  font-size: 1.1em;
   opacity: 0.8;
 }
-figure.snip0045 figcaption .icons {
-  width: 100%;
-  text-align: right;
-}
-figure.snip0045 figcaption .icons i {
-  font-size: 26px;
-  padding: 5px;
-  top: 50%;
-  color: #000000;
-}
+
 figure.snip0045 figcaption a {
   opacity: 0.3;
   -webkit-transition: opacity 0.35s;
@@ -82,15 +107,7 @@ figure.snip0045 .position {
   color: #ffffff;
   background: #000000;
 }
-figure.snip0045.blue .position {
-  background: #20638f;
-}
-figure.snip0045.red .position {
-  background: #962d22;
-}
-figure.snip0045.yellow .position {
-  background: #bf6516;
-}
+
 figure.snip0045.green .position {
   background: #1e8449;
 }
@@ -103,8 +120,9 @@ figure.snip0045.hover > img {
 /* Demo purposes only */
 .speakers {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
   justify-content: center;
   align-items: center;
-  flex-flow: wrap;
 }

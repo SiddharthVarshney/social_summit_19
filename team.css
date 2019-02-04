@@ -10,6 +10,11 @@
   .team-container {
     margin: 10px 40px;
   }
+
+  .team .page-header {
+    background: url("images/cover-images/team-cover-sm.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 .faculty {
   margin: auto;
