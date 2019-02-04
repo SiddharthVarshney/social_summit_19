@@ -1622,6 +1622,7 @@ body {
 .tickets-page .page-header {
   background: url("images/cover-images/events.jpg") no-repeat;
   background-size: cover;
+  padding-bottom: 20px;
 }
 
 .tickets-page .tabs {

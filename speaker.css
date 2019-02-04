@@ -3,35 +3,9 @@
 
 
 .tickets-page .page-header {
-  background: url("images/cover-images/speaker-cover.jpg") no-repeat;
+  background: url("images/cover-images/speaker.jpg") no-repeat;
   background-size: cover;
-}
-
-.content {
-  /* margin: ; */
-  
-}
-
-.content > h2 {
-  clear: both;
-  margin: 0;
-  padding: 1em 1% 0;
-  color: #00666b;
-  font-weight: 800;
-  font-size: 3.8em;
-  text-align: center;
-  margin: 0 0 100px 0;
-  font-family: inherit;
-}
-@media screen and (max-width: 720px) {
-  .content > h2 {
-    width: 100%;
-    margin: 0;
-    font-size: 32px;
-    font-weight: 500;
-    color: #00666b;
-    text-align: center;
-  }
+  padding-bottom: 20px;
 }
 
 figure.snip0045 {
@@ -62,6 +36,7 @@ figure.snip0045 > img {
   left: -15%;
   z-index: 1;
 }
+
 figure.snip0045 figcaption {
   padding: 20px 30px 20px 20px;
   position: absolute;
@@ -88,15 +63,6 @@ figure.snip0045 figcaption p {
   font-size: 1.1em;
   opacity: 0.8;
 }
-
-figure.snip0045 figcaption a {
-  opacity: 0.3;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-figure.snip0045 figcaption a:hover {
-  opacity: 0.8;
-}
 figure.snip0045 .position {
   width: 100%;
   text-align: right;
@@ -116,6 +82,47 @@ figure.snip0045.hover > img {
   left: -12%;
 }
 
+@media screen and (max-width:680px){
+  figure.snip0045 > img {
+    width: 40%;
+  }
+  figure.snip0045 figcaption h2 {
+    font-size: .8em;
+    font-weight: 200;
+  }
+  figure.snip0045 figcaption h2 span {
+    font-weight: 800;
+  }
+  figure.snip0045 figcaption p {
+    font-size: .7em;
+    opacity: 0.8;
+  }
+  figure.snip0045 .position {
+    width: 100%;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 0.9em;
+
+  }
+  figure.snip0045 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 280px;
+    width: 95%;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+  }
+
+  figure.snip0045 figcaption {
+    padding: 5px 7px 5px 5px;
+    position: absolute;
+    right: 0;
+    width: 60%;
+  }
+}
 
 /* Demo purposes only */
 .speakers {
@@ -125,4 +132,10 @@ figure.snip0045.hover > img {
   grid-gap: 30px;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width:680px){
+  .speakers {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
 }
